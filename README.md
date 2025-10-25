@@ -23,6 +23,47 @@ A Python project that automatically creates a **video slideshow from a set of im
 
 ---
 
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+
+- **Python 3.7+**  
+- **FFmpeg** installed and accessible in your system’s PATH  
+
+### 🧩 Install FFmpeg
+
+- **Windows:** [Download here](https://ffmpeg.org/download.html) and add it to your PATH.  
+- **Linux (Debian/Ubuntu):**
+  ```bash
+  sudo apt install ffmpeg
+
+
+## 💡 How to Use
+
+1. 🏠 **Go to the home page.**  
+2. 📤 **Upload** the images you want in your video.  
+3. ✍️ **Enter** the narration text (this will be converted to voice).  
+4. 🎬 **Click “Create Reel”** to generate your video.  
+5. ⬇️ **Once processing is done,** view or download your final **reel.mp4**.
+
+---
+
+## 🔧 How It Works
+
+1. The user uploads images via the **Flask web interface**.  
+2. The text is converted to speech using a **Text-to-Speech API** (`text_to_audio.py`).  
+3. The `generate_process.py` script:
+   - Creates a slideshow using **FFmpeg**.  
+   - Adds the generated **voiceover** as background audio.  
+4. The final video is saved as **reel.mp4** and can be downloaded.
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!  
+Check out the **issues** page or submit a **pull request**.
+
 ## 📁 Project Structure
 
 ```bash
@@ -47,10 +88,8 @@ your-project-repo/
 │   └── gallery.html
 │
 └── sample_images/          # Sample images for testing
-    ├── shah-rukh-khan.webp
-    └── srk-1.jpg
-##🚀 Getting Started
-##✅ Prerequisites
 
--Python 3.7+
--FFmpeg installed and accessible in your system’s PATH
+--- 
+
+
+
